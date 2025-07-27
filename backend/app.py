@@ -31,7 +31,7 @@ model_path = "backend/sentiment-model"
 if not os.path.exists(model_path):
     print("🔽 Downloading model from Hugging Face Hub...")
     snapshot_download(
-        repo_id="llavi/sentiment-model",
+        repo_id="Avi-16/sentiment-model",
         local_dir=model_path,
         repo_type="model",
         local_dir_use_symlinks=False
