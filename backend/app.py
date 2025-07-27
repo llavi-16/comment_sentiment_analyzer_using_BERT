@@ -163,3 +163,7 @@ async def analyze_video_comments(request: VideoRequest):
                 sentiment_results["positive"] += 1
 
     return sentiment_results
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("app:app", host="0.0.0.0", port=10000)
+
